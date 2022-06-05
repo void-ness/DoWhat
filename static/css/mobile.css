@@ -1,0 +1,32 @@
+.web {
+    display: block
+}
+
+.phone {
+    display: none !important;
+}
+
+.phone .phone-nav ul {
+    width: 40vw;
+    justify-content: center;
+}
+
+.phone-side-menu {
+    display: none;
+}
+
+.phone .phone-side-menu ul {
+    flex-direction: column;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin-top: 0;
+    border-radius: 0;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.phone .phone-side-menu ul li {
+    margin: 2rem 0;
+}

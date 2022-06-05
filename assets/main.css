@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #1F1F1F;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --primary-color: #00c58e;
+    --green-color: #54FFA3;
+    --dark-green: #36ce7d;
+    --black-color: #1F1F1F;
+    --gray-color: #c9c9c9;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    /* color: var(--primary-color); */
+    transform: translateY(5px);
+}
+
+a.nuxt-link-exact-active {
+    color: var(--primary-color);
+}
+
+input {
+    margin: 0;
+    border: 0;
+    outline: 0;
+}
