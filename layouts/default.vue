@@ -6,7 +6,7 @@
           <NuxtLink to="Contact">Contact</NuxtLink>
         </li>
         <li>
-          <NuxtLink to="home">DoWhat</NuxtLink>
+          <NuxtLink to="/">DoWhat</NuxtLink>
         </li>
         <li>
           <NuxtLink to="AboutUs">About Us</NuxtLink>
@@ -18,7 +18,7 @@
       <div class="menu phone-nav">
         <ul>
           <li>
-            <NuxtLink to="home">DoWhat</NuxtLink>
+            <NuxtLink to="/">DoWhat</NuxtLink>
           </li>
         </ul>
       </div>

@@ -15,6 +15,7 @@ body {
     --dark-green: #34af6d;
     --black-color: #1F1F1F;
     --gray-color: #878787;
+    --light-black: #383838;
 }
 
 a,
@@ -24,12 +25,11 @@ a:visited {
 }
 
 a:hover {
-    /* color: var(--primary-color); */
     transform: translateY(5px);
 }
 
 a.nuxt-link-exact-active {
-    color: var(--primary-color);
+    color: var(--light-black);
 }
 
 input {

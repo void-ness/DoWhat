@@ -91,6 +91,7 @@
 .Todos {
     width: 80vw !important;
     margin-top: 2rem;
+    justify-content: center;
 }
 
 .header {
