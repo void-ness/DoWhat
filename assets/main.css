@@ -12,9 +12,9 @@ body {
 :root {
     --primary-color: #00c58e;
     --green-color: #54FFA3;
-    --dark-green: #36ce7d;
+    --dark-green: #34af6d;
     --black-color: #1F1F1F;
-    --gray-color: #c9c9c9;
+    --gray-color: #878787;
 }
 
 a,
@@ -36,4 +36,9 @@ input {
     margin: 0;
     border: 0;
     outline: 0;
+}
+
+ul li {
+    list-style: none;
+    text-decoration: none;
 }

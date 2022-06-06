@@ -1,32 +1,102 @@
 .web {
-    display: block
+    display: none;
 }
 
 .phone {
-    display: none !important;
+    display: block !important;
+    position: relative;
 }
 
 .phone .phone-nav ul {
     width: 40vw;
     justify-content: center;
+    align-items: center;
+}
+
+.phone-menu {
+    position: absolute;
+    right: 1rem;
+    top: 0.2rem;
+    z-index: 1;
+}
+
+.phone-menu button {
+    background: none;
+    border: none;
+}
+
+.phone-menu i {
+    font-size: 2.2rem;
+    color: black;
+    transition: all 0.5s ease-in;
+    color: var(--green-color);
+
 }
 
 .phone-side-menu {
-    display: none;
-}
-
-.phone .phone-side-menu ul {
-    flex-direction: column;
     height: 100vh;
+    width: 52vw;
     position: fixed;
     top: 0;
-    right: 0;
+    right: -100%;
     margin-top: 0;
     border-radius: 0;
-    justify-content: flex-start;
-    align-items: flex-start;
+    background-color: var(--green-color);
+    z-index: 0;
+    transition: all 0.8s ease-in;
 }
 
-.phone .phone-side-menu ul li {
-    margin: 2rem 0;
+.phone-side-menu ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6rem;
+}
+
+.phone-side-menu ul li {
+    margin: 1.5rem 2rem;
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+
+/* Styling of Input Questions */
+
+.InputQues {
+    margin-top: 5rem !important;
+}
+
+.input {
+    width: 80% !important;
+    text-align: center;
+}
+
+.ques {
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 2.5rem !important;
+}
+
+.ques input {
+    width: 70vw !important;
+    margin-top: 1rem;
+}
+
+.add {
+    margin-top: 1rem !important;
+}
+
+/* Styling for Todos */
+.Todos {
+    width: 80vw !important;
+    margin-top: 2rem;
+}
+
+.header {
+    width: 10rem !important;
+}
+
+.content {
+    width: 16rem !important;
 }

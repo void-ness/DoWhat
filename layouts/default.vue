@@ -14,8 +14,8 @@
       </ul>
     </nav>
 
-    <nav class="menu phone">
-      <div class="phone-nav">
+    <nav class="phone">
+      <div class="menu phone-nav">
         <ul>
           <li>
             <NuxtLink to="home">DoWhat</NuxtLink>
@@ -24,14 +24,16 @@
       </div>
 
       <div class="phone-menu">
-        <i class="fa"></i>
+        <button id="toggler" @click="ToggleMenu()">
+          <i class="fa-solid fa-bars"></i>
+        </button>
       </div>
 
-      <div class="phone-side-menu">
+      <div id="side-menu" class="phone-side-menu">
         <ul>
-          <div class="phone-menu-close">
+          <!-- <div class="phone-menu-close">
             <i class="fa"></i>
-          </div>
+          </div>-->
           <li>
             <NuxtLink to="Contact">Contact</NuxtLink>
           </li>
@@ -49,16 +51,39 @@
 <script>
 export default {
   name: 'NavBar',
-  head() {
+  data() {
     return {
-      link: [
-        {
-          rel: 'stylesheet',
-          href: '/css/mobile.css',
-          media: 'screen and (max-width: 700px)',
-        },
-      ],
+      count: 1,
     }
+  },
+  head: {
+    link: [
+      {
+        rel: 'stylesheet',
+        href: '/css/mobile.css',
+        media: 'screen and (max-width: 700px)',
+      },
+    ],
+  },
+  methods: {
+    ToggleMenu() {
+      const toggle = document.getElementById('toggler')
+      const menu = document.getElementById('side-menu')
+
+      if (this.count) {
+        toggle.firstChild.style.transform = 'rotate(90deg)'
+        toggle.firstChild.style.color = 'black'
+        menu.style.right = '0'
+        menu.style.transition = 'all 0.8s ease-out'
+        this.count = 0
+      } else {
+        toggle.firstChild.style.color = 'var(--green-color)'
+        toggle.firstChild.style.transform = 'rotate(0deg)'
+        menu.style.right = '-100%'
+        menu.style.transition = 'all 0.8s ease-in'
+        this.count = 1
+      }
+    },
   },
 }
 </script>

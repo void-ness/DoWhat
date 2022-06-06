@@ -43,6 +43,7 @@ export default {
 .Todo {
   position: relative;
   margin: 2rem;
+  transition: all 0.1s ease-in;
 }
 
 .header {
@@ -56,14 +57,15 @@ export default {
   display: flex;
   align-items: center;
   z-index: 1;
+  transition: all 0.3s ease-in;
 }
 
 .header input[type='checkbox'] {
   cursor: pointer;
   appearance: none;
   background: transparent;
-  height: 20px;
-  width: 20px;
+  height: 16px;
+  width: 16px;
   border: 2px solid black;
   color: black;
   position: relative;
@@ -73,10 +75,10 @@ export default {
 .header input[type='checkbox']:after {
   content: '';
   position: absolute;
-  left: 25%;
+  left: 35%;
   top: 3%;
-  width: 4px;
-  height: 11px;
+  width: 2px;
+  height: 8px;
   border: 2px solid rgb(57, 57, 57);
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
@@ -104,6 +106,11 @@ export default {
   padding-inline: 0.7rem;
   position: relative;
   z-index: 0;
+  transition: background 0.3s ease-in, box-shadow 0.2s ease-in;
+}
+
+.content:hover {
+  box-shadow: inset #5c5c5c 0px -5px 10px -3px;
 }
 
 .content span {

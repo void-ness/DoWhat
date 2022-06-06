@@ -21,9 +21,13 @@ export default {
     createDodo() {
       const title = document.getElementById('InpTitle').value
       const desc = document.getElementById('InpDesc').value
-      this.$store.commit('DoWhat/create', { title, desc })
-      document.getElementById('InpDesc').value = ''
-      document.getElementById('InpTitle').value = ''
+      if (title === '' || desc === '') {
+        alert('Please Enter Task Details Properly')
+      } else {
+        this.$store.commit('DoWhat/create', { title, desc })
+        document.getElementById('InpDesc').value = ''
+        document.getElementById('InpTitle').value = ''
+      }
     },
   },
 }
@@ -59,6 +63,11 @@ export default {
   height: 2.5em;
   padding-inline: 1em;
   font-weight: 200;
+}
+
+.ques input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px var(--green-color) inset;
+  box-shadow: 0 0 0px 1000px var(--green-color) inset;
 }
 
 .add {
