@@ -80,5 +80,6 @@ export default {
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
   font-size: 1.2rem;
+  border: none;
 }
 </style>
