@@ -1,7 +1,7 @@
 <template>
   <div>
     <InputQues class="InputQues" />
-    <DoThis class="op" />
+    <DoThis />
   </div>
 </template>
 
